@@ -4,11 +4,14 @@
     <title>Sayaara.se</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts (byt 'Montserrat' mot annan om du vill testa) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 50px 20px;
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif; /* <-- fonten */
             text-align: center;
             color: #fff;
             background: linear-gradient(-45deg, #c11314, #e63946, #8b0000, #ff4d4d);
@@ -88,8 +91,6 @@
     </style>
 </head>
 <body>
-    <h1>Sayaara</h1>
-    <hr>
     <h1>Våra sociala medier 👇</h1>
 
     <a href="https://www.instagram.com/sayaara.se" target="_blank" class="instagram">
