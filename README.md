@@ -1,95 +1,104 @@
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Sayaara.se</title>
-  <!-- Google Fonts Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(135deg, #c11314, #e63946);
-      color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      padding: 50px;
-      margin: 0;
-    }
-    h1 {
-      margin: 40px 0 20px;
-      font-size: 2rem;
-    }
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 20px auto;
-      padding: 15px 30px;
-      width: 250px;
-      background-color: #fff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: 600;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    }
-    .link i {
-      margin-right: 10px;
-      font-size: 20px;
-    }
-    .instagram {
-      background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-      color: #fff;
-    }
-    .tiktok {
-      background: #000;
-      color: #fff;
-    }
-    hr {
-      margin: 30px auto;
-      width: 80%;
-      border: none;
-      border-top: 2px solid rgba(255,255,255,0.4);
-    }
-    .top-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 25px;
-      background-color: #c11314;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .top-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
-    }
-  </style>
-  <!-- Font Awesome för ikoner -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Sayaara.se</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts (byt 'Montserrat' mot annan om du vill testa) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            font-family: 'Montserrat', sans-serif; /* <-- fonten */
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(-45deg, #c11314, #e63946, #8b0000, #ff4d4d);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 28px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #fff;
+            margin: 25px auto;
+            width: 70%;
+            opacity: 0.4;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 15px auto;
+            padding: 15px 25px;
+            width: 240px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            transition: transform 0.2s, opacity 0.3s;
+        }
+
+        a:hover {
+            transform: translateY(-4px);
+            opacity: 0.9;
+        }
+
+        /* Instagram-knapp */
+        .instagram {
+            background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        }
+
+        /* TikTok-knapp */
+        .tiktok {
+            background: #000;
+        }
+
+        /* Ikoner */
+        .fa-instagram {
+            color: #fff;
+        }
+
+        .fa-tiktok {
+            color: #25F4EE;
+            text-shadow: 1px 1px #FE2C55;
+        }
+
+        /* Responsivitet */
+        @media (max-width: 500px) {
+            a {
+                width: 90%;
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Länk högst upp -->
-  <a href="https://www.sayaara.se" target="_blank" class="top-link">Sayaara</a>
+    <h1>Våra sociala medier 👇</h1>
 
-  <h1>Våra sociala medier 👇</h1>
-  <hr>
+    <a href="https://www.instagram.com/sayaara.se" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
 
-  <a href="https://www.instagram.com/sayaara.se?igsh=MXVqZDhsazlkNWk1dA%3D%3D&utm_source=qr" 
-     target="_blank" class="link instagram">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
-
-  <a href="https://www.tiktok.com/@sayaara.se?_t=ZN-8zoSgZ8UbzC&_r=1" 
-     target="_blank" class="link tiktok">
-    <i class="fab fa-tiktok"></i> TikTok
-  </a>
+    <a href="https://www.tiktok.com/@sayaara.se" target="_blank" class="tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
 </body>
 </html>
