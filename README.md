@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
-            background-color: #c11314;
-            color: #fff;
+            margin: 0;
+            padding: 50px 20px;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px 20px;
+            color: #fff;
+            background: linear-gradient(-45deg, #c11314, #e63946, #8b0000, #ff4d4d);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         h1 {
@@ -64,8 +73,8 @@
         }
 
         .fa-tiktok {
-            color: #25F4EE; /* TikTok turkos */
-            text-shadow: 1px 1px #FE2C55; /* röd/rosa glow */
+            color: #25F4EE;
+            text-shadow: 1px 1px #FE2C55;
         }
 
         /* Responsivitet */
