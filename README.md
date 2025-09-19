@@ -89,7 +89,7 @@
             }
         }
     </style>
-<head>
+</head>
   <meta charset="UTF-8">
   <title>Sayaara.se</title>
   <!-- Lägg till Google Fonts här -->
